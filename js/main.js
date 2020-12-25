@@ -1,6 +1,13 @@
-function pageLoadedHandler() {
-  alert('I\'m alive');
+
+
+window.onload = init;
+
+function init() {
+  var image = document.getElementById('zero');
+  image.onclick = showAnswer;
 }
 
-
-window.onload = pageLoadedHandler();
+function showAnswer() {
+  var image = document.getElementById('zero');
+  image.src = "img/zero.jpg";
+}
